@@ -1,4 +1,4 @@
-package main.java.com.example.login.model;
+package com.example.login.model;
 
 public class User {
     private String username;
