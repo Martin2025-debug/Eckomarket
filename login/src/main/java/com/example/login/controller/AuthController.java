@@ -1,4 +1,4 @@
-package com.example.login.controller;
+package main.java.com.example.login.controller;
 
 import com.example.login.model.User;
 import com.example.login.service.AuthService;
