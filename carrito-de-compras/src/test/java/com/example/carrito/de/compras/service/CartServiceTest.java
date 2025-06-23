@@ -1,4 +1,4 @@
-package test.java.com.example.carrito.de.compras.service;
+package com.example.carrito.de.compras.service;
 
 import com.example.carrito.de.compras.model.CartItem;
 import com.example.carrito.de.compras.service.CartService;

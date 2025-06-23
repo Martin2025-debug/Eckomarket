@@ -1,4 +1,4 @@
-package main.java.com.example.carrito.de.compras.service;
+package com.example.carrito.de.compras.service;
 
 import com.example.carrito.de.compras.model.CartItem;
 import org.springframework.stereotype.Service;
@@ -13,9 +13,11 @@ public class CartService {
     private final Map<Long, CartItem> items = new ConcurrentHashMap<>();
 
     public void addItem(CartItem item) {
+        if (item == null || item.getId() == null) {
+            throw new IllegalArgumentException("Item and id must not be null");
+        }
         items.put(item.getId(), item);
-            if (item == null || item.getId() == null) {
-                throw new IllegalArgumentException("Item and id must not be null");
+
     }
 
     public Collection<CartItem> getItems() {
