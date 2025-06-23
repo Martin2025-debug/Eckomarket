@@ -1,0 +1,33 @@
+package com.example.carritodecompras;
+
+import com.example.carritodecompras.model.CartItem;
+import com.example.carritodecompras.service.CartService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class CartServiceTest {
+
+    private CartService cartService;
+
+    @BeforeEach
+    void setUp() {
+        cartService = new CartService();
+    }
+
+    @Test
+    void addAndRetrieveItem() {
+        CartItem item = new CartItem(1L, "Apple", 2, 1.5);
+        cartService.addItem(item);
+        assertEquals(1, cartService.getItems().size());
+    }
+
+    @Test
+    void removeItem() {
+        CartItem item = new CartItem(1L, "Apple", 2, 1.5);
+        cartService.addItem(item);
+        cartService.removeItem(1L);
+        assertTrue(cartService.getItems().isEmpty());
+    }
+}
