@@ -1,6 +1,6 @@
-package com.example.carritodecompras.service;
+package com.example.carrito.de.compras.service;
 
-import com.example.carritodecompras.model.CartItem;
+import com.example.carrito.de.compras.model.CartItem;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package com.example.carritodecompras.model;
+package com.example.carrito.de.compras.model;
 
 public class CartItem {
     private Long id;

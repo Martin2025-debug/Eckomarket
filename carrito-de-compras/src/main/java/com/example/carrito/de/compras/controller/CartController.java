@@ -1,7 +1,7 @@
-package com.example.carritodecompras.controller;
+package com.example.carrito.de.compras.controller;
 
-import com.example.carritodecompras.model.CartItem;
-import com.example.carritodecompras.service.CartService;
+import com.example.carrito.de.compras.model.CartItem;
+import com.example.carrito.de.compras.service.CartService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

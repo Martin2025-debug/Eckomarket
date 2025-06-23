@@ -1,7 +1,7 @@
-package com.example.carritodecompras;
+package com.example.carrito.de.compras;
 
-import com.example.carritodecompras.model.CartItem;
-import com.example.carritodecompras.service.CartService;
+import com.example.carrito.de.compras.model.CartItem;
+import com.example.carrito.de.compras.service.CartService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
