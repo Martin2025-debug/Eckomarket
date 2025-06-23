@@ -1,4 +1,4 @@
-package com.example.carrito.de.compras.service;
+package test.java.com.example.carrito.de.compras.service;
 
 import com.example.carrito.de.compras.model.CartItem;
 import com.example.carrito.de.compras.service.CartService;
@@ -29,5 +29,17 @@ class CartServiceTest {
         cartService.addItem(item);
         cartService.removeItem(1L);
         assertTrue(cartService.getItems().isEmpty());
+    }
+
+    
+    @Test
+    void addItemNullThrowsException() {
+        assertThrows(IllegalArgumentException.class, () -> cartService.addItem(null));
+    }
+
+    @Test
+    void addItemWithNullIdThrowsException() {
+        CartItem item = new CartItem(null, "Orange", 1, 0.5);
+        assertThrows(IllegalArgumentException.class, () -> cartService.addItem(item));
     }
 }

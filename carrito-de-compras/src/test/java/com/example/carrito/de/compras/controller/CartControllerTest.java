@@ -1,4 +1,4 @@
-package com.example.carrito.de.compras.controller;
+package test.java.com.example.carrito.de.compras.controller;
 
 import com.example.carrito.de.compras.controller.CartController;
 import com.example.carrito.de.compras.model.CartItem;
